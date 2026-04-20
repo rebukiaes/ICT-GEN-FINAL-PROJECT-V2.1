@@ -1,0 +1,130 @@
+body {
+  font-family: 'Pixelify Sans', monospace;
+  background-color: black;
+  color: #89bad9;
+}
+
+.screen {
+  background-color: var(--bg);
+}
+
+.meta-field {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 8px;
+  border: 1px solid #89bad9;
+}
+
+.meta-key {
+  font-size: 0.58rem;
+  letter-spacing: 0.18em;
+  color:#89bad9;
+  text-transform: uppercase;
+}
+
+.meta-val {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: #89bad9;
+}
+/*note for explaination because i might forget: meta is basically just defines the metadata of an html document (in this case, index.html). */
+/*in this case, the metadata that is used for the 4 boxes in the top are used*/
+/*rem or em is a unit of measurement in css that is ALWAYS relative to the font size of the document */
+/*border is just border */
+
+.indexlogo {
+  justify-content: center;
+}
+
+.prescript-quote {
+  font-size: clamp(1.1rem, 3.5vw, 1.55rem);
+  font-weight: 700;
+  line-height: 1.7;
+  letter-spacing: 0.05em;
+  color: #86bada;
+  border: none;
+  padding: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.btn-prescript {
+  font-family: 'Pixelify Sans', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  border: 1px solid;
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-cleared {
+  color: #89bad9;
+  border-color: #89bad9;
+}
+.btn-cleared:hover {
+  background-color: #89bad9;
+  color: black;
+}
+
+.btn-failed {
+  color: #d98989;
+  border-color: #d98989;
+}
+.btn-failed:hover {
+  background-color: #d98989;
+  color: black;
+}
+
+.btn-back {
+  color: #89bad9;
+  border-color: #89bad9;
+  display: block;
+  margin: 0 auto;
+}
+.btn-back:hover {
+  background-color: #89bad9;
+  color: black;
+}
+
+.result-screen {
+  padding: 1.5rem 0;
+}
+
+.result-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+.result-label-cleared { color: #89bad9; }
+.result-label-failed  { color: #d98989; }
+
+.result-body {
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  line-height: 1.9;
+  color: #89bad9;
+}
+
+/* keyframes is basically the same thing as keyframes in animation (as this is basically an animation) */
+/* In animation and filmmaking, a key frame (or keyframe) is a drawing or \
+shot that defines the starting and ending points of a smooth transition. 
+These are called frames because their position in time is measured in frames 
+on a strip of film or on a digital video editing timeline. A sequence of key 
+frames defines which movement the viewer will see, whereas the position of the 
+key frames on the film, video, or animation defines the timing of the movement. 
+Because only two or three key frames over the span of a second do not create the 
+illusion of movement, the remaining frames are filled with "inbetweens".[1] 
+w wikipedia */
